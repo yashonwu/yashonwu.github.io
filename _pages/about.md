@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a 4th-year PhD student at the [Terrier Team](http://terrierteam.dcs.gla.ac.uk/index.html) within the [Glasgow Information Retrieval Group](https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/informationretrieval/#), [University of Glasgow](https://www.gla.ac.uk/), supervised by Dr [Craig Macdonald](http://www.dcs.gla.ac.uk/~craigm/) and Professor [Iadh Ounis](http://www.dcs.gla.ac.uk/~ounis/).
+I am currently a 4th-year PhD student at the [Terrier Team](http://terrierteam.dcs.gla.ac.uk/index.html) within the [Glasgow Information Retrieval Group](https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/informationretrieval/#), [University of Glasgow](https://www.gla.ac.uk/), supervised by Professor [Craig Macdonald](http://www.dcs.gla.ac.uk/~craigm/) and Professor [Iadh Ounis](http://www.dcs.gla.ac.uk/~ounis/).
 The research of my PhD is mainly about **Multi-Modal Conversational Information Seeking (MMCIS)**. In particular, I mainly focus on three things:
 - **multi-modal representation learning**: understanding the users’ information
 needs across multi-turn interactions with various modalities,
