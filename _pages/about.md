@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 I am currently a 4th-year PhD student at the [Terrier Team](http://terrierteam.dcs.gla.ac.uk/index.html) within the [Glasgow Information Retrieval Group](https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/informationretrieval/#), [University of Glasgow](https://www.gla.ac.uk/), supervised by Professor [Craig Macdonald](http://www.dcs.gla.ac.uk/~craigm/) and Professor [Iadh Ounis](http://www.dcs.gla.ac.uk/~ounis/).
-The research of my PhD is mainly about **Multi-Modal Conversational Information Seeking (MMCIS)**. In particular, I mainly focus on three things:
+My PhD research is mainly about **Multi-Modal Conversational Information Seeking (MMCIS)**. In particular, I mainly focus on three things:
 - **multi-modal representation learning**: understanding the users’ information
 needs across multi-turn interactions with various modalities,
 - **deep reinforcement learning**: optimising the multi-turn decision-making
@@ -23,8 +23,9 @@ the search/recommendation models.
 
 My study is funded by the [Closed Loop Data Science Project](https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/closedloop/) ([EPSRC](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/R018634/1) funded) and the [Computing Science Excellence Bursary](https://www.gla.ac.uk/scholarships/schoolofcomputingscienceinternationalexcellenceawards/).
 
-My recent research interest focuses more on Large Language Models (LLMs) and
-Reinforcement Learning from Human Feedback (RLHF).
+My recent research interest focuses on applications with Large Language Models (LLMs), including: 
+- Truthful LLMs (w/ Reinforcement Learning from Human Feedback (RLHF) or Retrieval-Augmented Generation (RAG))
+- LLM Powered Autonomous Agents
 
 News
 ------
