@@ -12,7 +12,8 @@ You can also find my papers on <u><a href="https://scholar.google.com/citations?
 
   <!-- Item: wu2023goal -->
   <li >
-  <b>Yaxiong Wu</b>, Craig Macdonald, Iadh Ounis. &ldquo;Goal-Oriented Multi-Modal Interactive Recommendation with Verbal and Non-Verbal Relevance Feedback.&rdquo; RecSys 2023. Oral. (Accepted)
+  <b>Yaxiong Wu</b>, Craig Macdonald, Iadh Ounis. &ldquo;Goal-Oriented Multi-Modal Interactive Recommendation with Verbal and Non-Verbal Relevance Feedback.&rdquo; RecSys 2023. Oral.
+  <a href="https://dl.acm.org/doi/pdf/10.1145/3604915.3608775">[PDF]</a>
 
 <h1 style="margin-bottom:0px;padding-top:20px;">2022</h1>
 
