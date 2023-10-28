@@ -8,20 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a 4th-year PhD student at the [Terrier Team](http://terrierteam.dcs.gla.ac.uk/index.html) within the [Glasgow Information Retrieval Group](https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/informationretrieval/#), [University of Glasgow](https://www.gla.ac.uk/), supervised by Professor [Craig Macdonald](http://www.dcs.gla.ac.uk/~craigm/) and Professor [Iadh Ounis](http://www.dcs.gla.ac.uk/~ounis/).
-My PhD research is mainly about **Multi-Modal Conversational Information Seeking (MMCIS)**. In particular, I mainly focus on three things:
-- **multi-modal representation learning**: understanding the users’ information
-needs across multi-turn interactions with various modalities,
-- **deep reinforcement learning**: optimising the multi-turn decision-making
-process during information seeking,
-- **user simulation**: imitating the users’ feedback for training and evaluating
-the search/recommendation models.
-
-<!-- - **multi-modal**: adopting encoders for extracting the multimodal feature representations from both the system's recommendations and the users' feedback,
-- **dialog management**: specialising state trackers for tracking/estimating the users' preferences over time and dialog/recommendation policies with reinforcement learning,
-- **user simulator**: developing the simulation techniques for imitating the users' feedback for the purpose of training and evaluation. -->
-
-My study is funded by the [Closed Loop Data Science Project](https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/closedloop/) ([EPSRC](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/R018634/1) funded) and the [Computing Science Excellence Bursary](https://www.gla.ac.uk/scholarships/schoolofcomputingscienceinternationalexcellenceawards/).
+I am currently an AI Researcher at [Huawei Noah's Ark Lab](http://dev3.noahlab.com.hk/) in Singapore. Prior to joining Huawei, I was studying my PhD at the [Terrier Team](http://terrierteam.dcs.gla.ac.uk/index.html) within the [Glasgow Information Retrieval Group](https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/informationretrieval/#), [University of Glasgow](https://www.gla.ac.uk/), supervised by Professor [Craig Macdonald](http://www.dcs.gla.ac.uk/~craigm/) and Professor [Iadh Ounis](http://www.dcs.gla.ac.uk/~ounis/). My PhD research was mainly about **Multi-Modal Conversational Recommendation**. 
+My PhD study was fully funded by the [Closed Loop Data Science Project](https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/closedloop/) ([EPSRC](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/R018634/1)) and the [Computing Science Excellence Bursary](https://www.gla.ac.uk/scholarships/schoolofcomputingscienceinternationalexcellenceawards/).
 
 My recent research interest focuses on applications with Large Language Models (LLMs), including: 
 - Truthful LLMs (w/ Reinforcement Learning from Human Feedback (RLHF) or Retrieval-Augmented Generation (RAG))
@@ -41,8 +29,8 @@ News
 
 Education
 ------
-[2019-now]  [University of Glasgow](https://www.gla.ac.uk/) (UofG, QS Top 100), Glasgow, UK
-- PhD in Computing Science (Research), expected to graduate before 09/2023
+[2019-2023]  [University of Glasgow](https://www.gla.ac.uk/) (UofG, QS Top 100), Glasgow, UK
+- PhD in Computing Science (Research)
 
 [2018-2019] [University of Glasgow](https://www.gla.ac.uk/) (UofG, QS Top 100), Glasgow, UK
 - MSc in Data Science, Graduation with Distinction
@@ -55,8 +43,10 @@ Education
 - Bachelor of Engineering in Flight Vehicle Propulsion Engineering
 - Bachelor of Management in Business Administration (minor)
 
-Activities
+Services
 ------
+- PC Member: ECIR 2024, RecSys 2023, ICTIR 2023
+- Invited Journal Reviewer: TWeb
 - Lab Demonstrator for Information Retrieval in 2020 and Recommender System in 2020 & 2021, at UofG.
 
 Useful Links
