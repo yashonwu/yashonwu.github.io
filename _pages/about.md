@@ -51,4 +51,4 @@ Services
 
 Useful Links
 ------
-[Huawei Noah's Ark Lab](http://dev3.noahlab.com.hk/), [@Terrier Team](https://twitter.com/terrierteam), [@Glasgow IR Group](https://twitter.com/IR_Glasgow)
+[@Huawei Noah's Ark Lab](http://dev3.noahlab.com.hk/), [@Terrier Team](https://twitter.com/terrierteam), [@Glasgow IR Group](https://twitter.com/IR_Glasgow)
