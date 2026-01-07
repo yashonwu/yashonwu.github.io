@@ -7,3 +7,10 @@ Highlights
 - Timeline-style layouts for Work Experience, Education, Patents, Publications, and Honors.
 - Fixed navigation with top/bottom jump buttons and anchored section links.
 - Responsive layout adjustments for mobile screens.
+
+Push commands
+```
+git add .
+git commit -m "Academic Profile Template"
+git push origin main
+```
