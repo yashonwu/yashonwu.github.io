@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yaxiong Wu | Academic Profile</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --text: #0f172a;
+        --muted: #475569;
+        --accent: #2563eb;
+        --border: #e2e8f0;
+        --background: #f8fafc;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+        color: var(--text);
+        background: var(--background);
+        line-height: 1.6;
+        scroll-behavior: smooth;
+      }
+
+      .page {
+        max-width: 980px;
+        margin: 48px auto 96px;
+        padding: 0 24px;
+      }
+
+      header {
+        background: white;
+        padding: 32px;
+        border-radius: 16px;
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+        border: 1px solid var(--border);
+      }
+
+      h1 {
+        font-size: 2.6rem;
+        letter-spacing: -0.02em;
+        margin-bottom: 12px;
+      }
+
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+        color: var(--muted);
+        font-size: 0.98rem;
+      }
+
+      .contact a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .intro {
+        margin-top: 20px;
+        color: var(--muted);
+      }
+
+      .intro p {
+        text-align: justify;
+        text-justify: inter-word;
+      }
+
+      .bio {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 160px;
+        gap: 24px;
+        align-items: start;
+        margin-top: 20px;
+      }
+
+      .bio .intro {
+        margin-top: 0;
+      }
+
+      .bio-photo {
+        width: 160px;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        border-radius: 16px;
+        border: 1px solid var(--border);
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+      }
+
+      section {
+        margin-top: 36px;
+        padding: 28px;
+        border-radius: 16px;
+        background: white;
+        border: 1px solid var(--border);
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+      }
+
+      footer {
+        margin-top: 32px;
+        text-align: center;
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+
+      .floating-nav {
+        position: fixed;
+        top: 140px;
+        right: 28px;
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 14px 16px;
+        box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .floating-nav h3 {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .floating-nav a {
+        color: var(--text);
+        text-decoration: none;
+        font-size: 0.95rem;
+      }
+
+      .floating-nav a:hover {
+        color: var(--accent);
+      }
+
+      .nav-group {
+        list-style: none;
+        display: grid;
+        gap: 10px;
+        text-align: center;
+      }
+
+      .nav-anchors {
+        list-style: none;
+        display: grid;
+        gap: 8px;
+        text-align: center;
+      }
+
+      .nav-anchors.bottom {
+        margin-top: auto;
+      }
+
+      .nav-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: 1px solid var(--border);
+        background: white;
+        display: grid;
+        place-items: center;
+        font-weight: 600;
+        font-size: 0.85rem;
+        color: var(--muted);
+        margin: 0 auto;
+      }
+
+      .nav-icon:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+
+      .timeline {
+        display: grid;
+        gap: 18px;
+      }
+
+      .timeline-item {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        gap: 18px;
+        align-items: start;
+        white-space: nowrap;
+      }
+
+      .timeline-item .period {
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .timeline-item .detail {
+        color: var(--text);
+      }
+
+      .timeline-item .detail span {
+        display: block;
+        color: var(--muted);
+        margin-top: 4px;
+      }
+
+      .patent-item {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: 18px;
+        align-items: start;
+      }
+
+      .patent-item .period {
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .publication-item {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: 18px;
+        align-items: start;
+      }
+
+      .publication-item .period {
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .honor-item {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 18px;
+        align-items: start;
+      }
+
+      .honor-item .period {
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .no-wrap {
+        white-space: nowrap;
+      }
+
+      ul {
+        list-style: none;
+        display: grid;
+        gap: 12px;
+      }
+
+      .intro ul {
+        list-style: disc;
+        padding-left: 20px;
+        display: grid;
+        gap: 8px;
+      }
+
+      li strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      @media (max-width: 720px) {
+        .floating-nav {
+          display: none;
+        }
+
+        .bio {
+          grid-template-columns: 1fr;
+        }
+
+        .bio-photo {
+          width: min(60%, 220px);
+          justify-self: start;
+        }
+
+        .timeline-item {
+          grid-template-columns: 1fr;
+        }
+
+        header {
+          padding: 24px;
+        }
+
+        section {
+          padding: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page" id="top">
+      <nav class="floating-nav" aria-label="Section navigation">
+        <!-- <h3>Navi</h3> -->
+        <ul class="nav-anchors">
+          <li><a class="nav-icon" href="#top" aria-label="Back to top">↑</a></li>
+        </ul>
+        <ul class="nav-group">
+          <li><a href="#work-experience">Work</a></li>
+          <li><a href="#education">Edu.</a></li>
+          <li><a href="#patents">Patents</a></li>
+          <li><a href="#publications">Pub.</a></li>
+          <li><a href="#honors">Honors</a></li>
+        </ul>
+        <ul class="nav-anchors bottom">
+          <li><a class="nav-icon" href="#bottom" aria-label="Jump to bottom">↓</a></li>
+        </ul>
+      </nav>
+      <header>
+        <h1>Yaxiong Wu</h1>
+        <div class="contact">
+          <span>📧 <a href="mailto:wuyashon@gmail.com">Email</a></span>
+          <span>🌐 <a href="https://github.com/yashonwu">GitHub</a></span>
+          <span>🎓 <a href="https://scholar.google.com/citations?user=zKPWrEAAAAAJ&hl=en">Google Scholar</a></span>
+          <span>💼 <a href="https://www.linkedin.com/in/yaxiong-wu-0b9462227">LinkedIn</a></span>
+        </div>
+        <div class="bio">
+          <div class="intro">
+            <p>
+              Yaxiong Wu received his PhD from the School of Computing Science (CoSE), University of Glasgow (UofG), under the joint supervision of Prof. Craig Macdonald and Prof. Iadh Ounis. His doctoral research focused on Multi-Modal Conversational Recommendation with an emphasis on closed-loop systems and reinforcement learning. During his PhD, he was fully funded by the Closed Loop Data Science Project (EPSRC) and the Computing Science Excellence Bursary. After completing his PhD, he worked for two years as a Senior Staff Engineer at Noah's Ark Lab, Huawei (Singapore), where he led research on AI Agents.
+              His research interests primarily lie in the following areas:
+            </p>
+            <ul>
+              <li><em>Information Retrieval</em> (Search, Recommendation, RAG, Deep Research)</li>
+              <li><em>Agentic AI</em> (Memory, Skills, Reasoning, Planning, Applications, RL)</li>
+              <li><em>Efficient AI</em> (LLM/VLM Inference, Token-Efficient Agents)</li>
+            </ul>
+          </div>
+          <img class="bio-photo" src="bio-photo.jpg" alt="Yaxiong Wu" />
+        </div>
+      </header>
+
+      <section id="work-experience">
+        <h2>Work Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="period">2023/10 — 2025/09</div>
+            <div class="detail">
+              <strong>Senior Staff Engineer, Search &amp; Reccommendation Lab, Noah's Ark Lab, Huawei, Singapore.</strong>
+              <span>AI Agents (Memory, Recommendation, RAG)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="period">2019/10 — 2023/09</div>
+            <div class="detail">
+              <strong>University of Glasgow (UofG) — Glasgow, UK</strong>
+              <span>Ph.D. in Computing Science, supervised by Prof. Craig Macdonald &amp; Prof. Iadh Ounis.</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="period">2018/05 — 2019/09</div>
+            <div class="detail">
+              <strong>University of Glasgow (UofG) — Glasgow, UK</strong>
+              <span>M.Sc. in Data Science, Graduation with Distinction.</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="period">2013/09 — 2016/03</div>
+            <div class="detail">
+              <strong>Beihang University (BUAA) — Beijing, China</strong>
+              <span>M.Eng. in Aerospace Science and Technology, supervised by Prof. Haixing Wang.</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="period">2009/08 — 2013/07</div>
+            <div class="detail">
+              <strong>Harbin Engineering University (HEU) — Harbin, China</strong>
+              <span>B.Eng. in Flight Vehicle Propulsion Engineering, B.B.M. in Business Administration (minor).</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="patents">
+        <h2>Patents</h2>
+        <ul>
+          <li>
+            <div class="patent-item">
+              <span class="period">2025/07</span>
+              <div class="detail">
+                <strong>CoSteer: Collaborative Decoding-Time Personalization via Local Delta Steering</strong>
+                Co-Inventor (2nd). Patent ID: 92093217CN01.
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="patent-item">
+              <span class="period">2025/05</span>
+              <div class="detail">
+                <strong>Query-Centric Graph Retrieval Augmented Generation</strong>
+                Lead Inventor (1st). Patent ID: 92087577CN01.
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="patent-item">
+              <span class="period">2024/10</span>
+              <div class="detail">
+                <strong>Thought-Augmented Planning for LLM-Powered Interactive Recommender Agent</strong>
+                Lead Inventor (1st). Patent ID: 92074271CN01. (KDD 2026)
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="patent-item">
+              <span class="period">2024/09</span>
+              <div class="detail">
+                <strong>Adaptive Schema-aware Event Extraction with Retrieval-Augmented Generation</strong>
+                Lead Inventor (1st). Patent ID: 92073058CN01. (EMNLP 2025 Findings)
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="patent-item">
+              <span class="period">2024/07</span>
+              <div class="detail">
+                <strong>Hierarchical Skill-based Collaborative Multi-Agent System for Interactive Recommendation</strong>
+                Lead Inventor (1st). Patent ID: 92069447CN01.
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="patent-item">
+              <span class="period">2024/05</span>
+              <div class="detail">
+                <strong>FuxiAgent: A Lightweight Multi-Agent Framework</strong>
+                Co-Inventor (2nd). Patent ID: 92064791CN01.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications (Selected)</h2>
+        <ul>
+          <li>
+            <div class="publication-item">
+              <span class="period">2026</span>
+              <div class="detail">
+                <strong>Thought-Augmented Planning for LLM-Powered Interactive Recommender Agent</strong>
+                Haocheng Yu, <strong style="display:inline;">Yaxiong Wu</strong>, Hao Wang, Wei Guo, Yong Liu, Yawen Li, Yuyang Ye, Junping Du, Enhong Chen. <em>KDD 2026 (Accepted)</em>. 
+                <span>📄 [<a href="https://arxiv.org/pdf/2506.23485">Paper</a>]</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="publication-item">
+              <span class="period">2025</span>
+              <div class="detail">
+                <strong>Query-Centric Graph Retrieval Augmented Generation</strong>
+                <strong style="display:inline;">Yaxiong Wu</strong>, Jianyuan Bo, Yongyue Zhang, Sheng Liang, Yong Liu. <em>ArXiv</em>.
+                <span>📄 [<a href="https://arxiv.org/pdf/2509.21237">Paper</a>]</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="publication-item">
+              <span class="period">2025</span>
+              <div class="detail">
+                <strong>SGMem: Sentence Graph Memory for Long-Term Conversational Agents</strong>
+                <strong style="display:inline;">Yaxiong Wu</strong>, Yongyue Zhang, Sheng Liang, Yong Liu. <em>ArXiv</em>.
+                <span>📄 [<a href="https://arxiv.org/pdf/2509.21212?">Paper</a>]</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="publication-item">
+              <span class="period">2025</span>
+              <div class="detail">
+                <strong>Adaptive Schema-aware Event Extraction with Retrieval-Augmented Generation</strong>
+                Sheng Liang, Hang Lv, Zhihao Wen, <strong style="display:inline;">Yaxiong Wu</strong>, Yongyue Zhang, Hao Wang, Yong Liu. <em>EMNLP 2025 Findings</em>.
+                <span>📄 [<a href="https://arxiv.org/pdf/2505.08690?">Paper</a>]</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="publication-item">
+              <span class="period">2025</span>
+              <div class="detail">
+                <strong>From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs</strong>
+                <strong style="display:inline;">Yaxiong Wu</strong>, Sheng Liang, Chen Zhang, Yichao Wang, Yongyue Zhang, Huifeng Guo, Ruiming Tang, Yong Liu. <em>ArXiv</em>.
+                <span>📄 [<a href="https://arxiv.org/pdf/2504.15965">Paper</a>]</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="publication-item">
+              <span class="period">2024</span>
+              <div class="detail">
+                <strong>Personalised Multi-Modal Interactive Recommendation with Hierarchical State Representations</strong>
+                <strong style="display:inline;">Yaxiong Wu</strong>, Craig Macdonald, Iadh Ounis. <em>ACM TORS</em>.
+                <span>📄 [<a href="https://dl.acm.org/doi/pdf/10.1145/3651169">Paper</a>]</span>
+                <span>🛠️ [<a href="https://github.com/yashonwu/pmmir">Code</a>]</span>
+                <span>📂 [<a href="https://github.com/yashonwu/mmir_datasets">Dataset</a>]</span>
+                <span>👤 [<a href="https://github.com/yashonwu/mmir_usersim">User Simulator</a>]</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="publication-item">
+              <span class="period">2023</span>
+              <div class="detail">
+                <strong>Goal-Oriented Multi-Modal Interactive Recommendation with Verbal and Non-Verbal Relevance Feedback</strong>
+                <strong style="display:inline;">Yaxiong Wu</strong>, Craig Macdonald, Iadh Ounis. <em>ACM RecSys 2023</em>.
+                <span>📄 [<a href="https://dl.acm.org/doi/pdf/10.1145/3604915.3608775">Paper</a>]</span>
+                <span>🛠️ [<a href="https://github.com/yashonwu/gommir">Code</a>]</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="publication-item">
+              <span class="period">2022</span>
+              <div class="detail">
+                <strong>Multi-Modal Dialog State Tracking for Interactive Fashion Recommendation</strong>
+                <strong style="display:inline;">Yaxiong Wu</strong>, Craig Macdonald, Iadh Ounis. <em>ACM RecSys 2022</em>.
+                <span>📄 [<a href="https://dl.acm.org/doi/pdf/10.1145/3523227.3546774">Paper</a>]</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="publication-item">
+              <span class="period">2022</span>
+              <div class="detail">
+                <strong>Multimodal Conversational Fashion Recommendation with Positive and Negative Natural-Language Feedback</strong>
+                <strong style="display:inline;">Yaxiong Wu</strong>, Craig Macdonald, Iadh Ounis. <em>ACM CUI 2022</em>.
+                <span>📄 [<a href="https://dl.acm.org/doi/pdf/10.1145/3543829.3543837">Paper</a>]</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="publication-item">
+              <span class="period">2021</span>
+              <div class="detail">
+                <strong>Partially Observable Reinforcement Learning for Dialog-based Interactive Recommendation</strong>
+                <strong style="display:inline;">Yaxiong Wu</strong>, Craig Macdonald, Iadh Ounis. <em>ACM RecSys 2021</em>.
+                <span>📄 [<a href="https://dl.acm.org/doi/pdf/10.1145/3460231.3474256">Paper</a>]</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="publication-item">
+              <span class="period">2020</span>
+              <div class="detail">
+                <strong>A Hybrid Conditional Variational Autoencoder Model for Personalised Top-N Recommendation</strong>
+                <strong style="display:inline;">Yaxiong Wu</strong>, Craig Macdonald, Iadh Ounis. <em>ACM ICTIR 2020</em>.
+                <span>📄 [<a href="https://eprints.gla.ac.uk/219367/1/219367.pdf">Paper</a>]</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="honors">
+        <h2>Honors & Scholarships</h2>
+        <ul>
+          <li>
+            <div class="honor-item">
+              <span class="period">2025</span>
+              <div class="detail">Excellent Individual Award 2024 (Singapore Research Center, Huawei)</div>
+            </div>
+          </li>
+          <li>
+            <div class="honor-item">
+              <span class="period">2024</span>
+              <div class="detail">Project Technology Innovation Award (Singapore Search &amp; Reccommendation Lab, Huawei)</div>
+            </div>
+          </li>
+          <li>
+            <div class="honor-item">
+              <span class="period">2019 — 2023</span>
+              <div class="detail"><a href="https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/closedloop/">Closed-Loop Data Science Scholarship</a> (CoSE, UofG; EPSRC Funded)</div>
+            </div>
+          </li>
+          <li>
+            <div class="honor-item">
+              <span class="period">2019 — 2022</span>
+              <div class="detail">Computing Science Excellence Bursary (CoSE, UofG)</div>
+            </div>
+          </li>
+          <li>
+            <div class="honor-item">
+              <span class="period">2019</span>
+              <div class="detail">Graduation with Distinction (CoSE, UofG)</div>
+            </div>
+          </li>
+          <li>
+            <div class="honor-item">
+              <span class="period">2016</span>
+              <div class="detail">Excellent Master's Degree Dissertation (SoA, BUAA)</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <footer>© 2025 Yaxiong Wu. Created with CodeX.</footer>
+      <div id="bottom"></div>
+    </div>
+  </body>
+</html>
